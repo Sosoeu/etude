@@ -1,0 +1,45 @@
+body {
+    position: relative; /* 배경 색칠이 다른 요소에 영향을 주지 않도록 설정 */
+    margin: 0; /* 기본 마진 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+}
+
+.top {
+    position: relative;
+}
+
+.main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.main img{
+    display: block;
+    width: 100%;
+    height: auto;;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    z-index: 2;
+}
+
+.plus{
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    cursor: pointer;
+}
+
+.seach{
+    position: absolute;
+    top: 50px;
+    right: 125px;
+    cursor: pointer;
+}
+
+

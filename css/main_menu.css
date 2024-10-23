@@ -1,0 +1,70 @@
+.menu {
+   /*border: 1px solid red;*/
+    position: relative;
+    display: inline-block;
+    top: 37px;
+    left: 230px;
+    padding: 20px;
+    z-index: 3; 
+    cursor: pointer;
+}
+
+.highlight-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%; /* 원하는 넓이 설정 */
+    height: 420px; /* 원하는 높이 설정 */
+    background-color: transparent; /* 투명 배경색 */
+    transition: background-color 0.1s; /* 색 변경 시 애니메이션 */
+    pointer-events: none; /* 클릭 이벤트를 차단하여 배경처럼 보이게 함 */
+    z-index: 1; /* 메뉴 아래에 위치하게 함 */
+}
+
+/* 여기에 display: grid;가 들어가면 hover안먹힘 */
+.menu-content {
+    display: none;
+    position: absolute;
+    height: 250px;
+    width: auto;  /* 전체 맞춤 */
+    margin-top: 35px;
+    z-index: 4;
+    grid-template-columns: repeat(3, auto); /* 3개의 열로 나누기 */
+    gap: 10px; /* 항목 간격 */
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.menu-content a {
+    color: black;
+    margin-right: 30px;
+    width: auto; /* 글자수 맞춤 */
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: nowrap; /* 줄 바꿈 방지 */
+}
+
+/* 메뉴 항목에 마우스 오버 시 색칠할 영역의 배경색 변경 */
+.menu:hover~.highlight-area {
+    background-color: rgba(255, 255, 255, 0.3); /* 색 변경 */
+}
+
+.menu:hover .menu-content {
+    display: grid;
+}
+
+/* 각 항목의 열 지정 */
+.hawi1 { grid-column: 1; font-size: 15px; margin-bottom: 5px;} 
+.hawi2 { grid-column: 2;}
+.hawi3 { grid-column: 3;}
+.hawi4 { grid-column: 4;}
+.hawi5 { grid-column: 5;}
+.hawi6 { grid-column: 6;}
+.hawi7 { grid-column: 7;}
+.hawi8 { grid-column: 8;}
+.hawi9 { grid-column: 9;}
+.hawi10 { grid-column: 10;}
+.hawi11 { grid-column: 11;}
+.hawi12 { font-size: 15px;} 

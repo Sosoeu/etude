@@ -1,0 +1,44 @@
+.makeup-look{
+    position: relative;
+    /*border: 1px solid red;*/
+    top: 1200px;
+    background-image: url(../images/makeup-bg.jpeg);
+    width: 1560px;
+    height: 1200px;
+}
+
+.makeup-1{
+    position: absolute;
+    text-align: center;
+    top: 70px;
+    left: 520px;
+}
+
+h2{ font-size: 14px;}
+
+.viewmore{
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 160px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    background-color: #1C1C1C;
+    opacity: 0.9;
+}
+
+.button{ color: #fff; font-size: 20px; }
+
+.makeup-2{
+    position: relative;
+    top: 1000px;
+    left: 110px;
+}
+
+.makeup-3{
+    position: relative;
+    display: flex;
+    border: 1px solid red;
+    top: 1100px;
+    left: 60px;
+}

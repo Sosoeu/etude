@@ -1,0 +1,46 @@
+body {
+    position: relative; /* 배경 색칠이 다른 요소에 영향을 주지 않도록 설정 */
+    margin: 0; /* 기본 마진 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+}
+
+.top {
+    position: relative;
+}
+
+.main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+/* ===== 수정사항 =====  */
+.main img {
+    display: block; /* 이미지가 블록 요소로 표시되도록 설정 */
+    width: 100%; /* 부모 요소의 너비에 맞게 조정 */
+    height: auto; /* 이미지 비율 유지 */
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    z-index: 2;
+}
+
+/* ===== 수정사항 =====  */
+.plus{
+    position: absolute;
+    top: 50px;              
+    right: 80px;            
+    cursor: pointer;
+}
+
+/* ===== 수정사항 =====  */
+.seach{
+    position: absolute;
+    top: 50px;
+    right: 125px;           
+    cursor: pointer;
+}

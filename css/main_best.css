@@ -1,0 +1,23 @@
+.best{
+    position: relative;
+    /*border: 1px solid red;*/
+    top: 700px;
+}
+
+.best-bg{
+    position: absolute;
+    width: 1560px;
+    height: 500px;
+    background-color: #fbf3eb;
+}
+
+.best-item{
+    position: absolute;
+    display: flex;
+   /* border: 1px solid red;*/
+    top: 100px;
+    left: 140px;
+    text-align: center;
+    z-index: 4;
+    cursor: pointer;
+}
