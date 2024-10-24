@@ -1,23 +1,26 @@
+.contents {
+    position: relative;
+    background-color: #fbf3eb; /* 영역 확인을 위한 배경색 */
+    height: 800px;
+}
+
 .best{
     position: relative;
+    top: 150px;
     /*border: 1px solid red;*/
-    top: 700px;
 }
 
-.best-bg{
-    position: absolute;
-    width: 1560px;
-    height: 500px;
-    background-color: #fbf3eb;
+.image-grid {
+    display: flex; /* 플렉스박스 레이아웃 활성화 */
+    justify-content: space-between; /* 여백을 균등하게 분배 */
 }
 
-.best-item{
-    position: absolute;
-    display: flex;
-   /* border: 1px solid red;*/
-    top: 100px;
-    left: 140px;
-    text-align: center;
-    z-index: 4;
+.image-item {
+    width: calc(33.33%); /* 각 이미지 항목의 너비 설정 */
+    text-align: center; /* 텍스트 중앙 정렬 */
     cursor: pointer;
+}
+
+.image-item img {
+    width: 100%; /* 부모 요소의 너비에 맞게 조정 */
 }
