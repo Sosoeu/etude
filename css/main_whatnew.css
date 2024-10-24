@@ -35,6 +35,7 @@ h2{ font-size: 14px;}
 .whatnew-2 {
     display: flex;
     justify-content: space-between; /* 이미지 간의 간격 균등하게 배치 */
+    margin-left: 150px;
   }
   
   .whatnew-2 img {

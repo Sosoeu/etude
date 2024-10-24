@@ -32,6 +32,15 @@ h2{ font-size: 14px;}
     justify-content: center; /* 수평 중앙 정렬 */
 }
 
+.gift-2 {
+    display: flex;
+    justify-content: space-between; /* 이미지 간의 간격 균등하게 배치 */
+    margin-left: 150px;
+  }
+  
+  .gift-2 img {
+    width: 23%; /* 이미지의 너비를 4개가 맞춰질 정도로 설정 */
+  }
 
   
   
