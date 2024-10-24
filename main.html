@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>etude</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main_best.css" />
+    <link rel="stylesheet" type="text/css" href="css/main_makeup_look.css" />
+    <link rel="stylesheet" type="text/css" href="css/main_menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/main_top.css" />
 </head>
 
 <body>
@@ -137,27 +140,26 @@
     <div class="contents">
         <!-- 베스트 상품 나열 -->
         <div class="best"> 
-            <div class="best-bg"></div>
-            <div class="best-item">
-                <div class="fixingtint">
-                    <img src="images/fixingtint.png" alt="fixingtint" width="240px">
+            <div class="image-grid" width="100%">
+                <div class="image-item">
+                    <img src="images/fixingtint.png" alt="Image 1">
                     <div class="item-text">픽싱틴트<h4>12,000원</h4></div>
                 </div>
-                <div class="vegan">
-                    <img src="images/double_vegan.png" alt="vegan" width="240px">
-                    <div class="item-text">더블래스팅 비건 커버 파운데이션<H4>29,000원</H4></div>
+                <div class="image-item">
+                    <img src="images/double_vegan.png" alt="Image 2">
+                    <div class="item-text">더블래스팅 비건 커버 파운데이션<h4>29,000원</h4></div>
                 </div>
-                <div class="curlfix">
-                    <img src="images/curlfix_black.png" alt="curlfix" width="240px">
+                <div class="image-item">
+                    <img src="images/curlfix_black.png" alt="Image 3">
                     <div class="item-text">컬 픽스 마스카라<h4>16,000원</h4></div>
                 </div>
-                <div class="powder">
-                    <img src="images/Contour_Powder.png" alt="powder" width="240px">
+                <div class="image-item">
+                    <img src="images/Contour_Powder.png" alt="Image 4">
                     <div class="item-text">그림자 쉐딩<h4>20,000원</h4></div>
                 </div>
-                <div class="assence">
-                     <img src="images/assence.png" alt="assence" width="240px">
-                     <div class="item-text">순정 시카 카밍 앰플 에센스<h4>29,000원</h4></div>
+                <div class="image-item">
+                    <img src="images/assence.png" alt="Image 5">
+                    <div class="item-text">순정 시카 카밍 앰플 에센스<h4>29,000원</h4></div>
                 </div>
             </div>
         </div>
@@ -199,4 +201,16 @@
     </div>
 </body>
 
+
 </html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const mainImage = document.querySelector('.main img');
+        const topDiv = document.querySelector('.top');
+        topDiv.style.height = mainImage.offsetHeight + 'px';
+        
+        const bestDiv = document.querySelector('.best');
+        bestDiv.style.height = topDiv.style.height;
+});
+</script>
