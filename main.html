@@ -8,13 +8,14 @@
     <link rel="stylesheet" type="text/css" href="css/main_makeup_look.css" />
     <link rel="stylesheet" type="text/css" href="css/main_menu.css" />
     <link rel="stylesheet" type="text/css" href="css/main_top.css" />
+    <link rel="stylesheet" type="text/css" href="css/main_soonjung.css" />
 </head>
 
 <body>
     <div class="top">
     <!-- 메인 이미지 -->
     <div class="main">
-        <img src="images/main.jpg" alt="top" width="1560px">
+        <img src="images/main.jpg" alt="top" max-width="100%" height="auto">
     </div>
     
     <!-- 로고 이미지 -->
@@ -168,8 +169,8 @@
         <div class="makeup-look">
             <!-- 메이크업룩-1 -->
             <div class="makeup-1">
-                <div class="brush">
-                    <img src="images/brush.png" alt="brush" width="50px">
+                <div class="icon">
+                    <img src="images/makeuplook_icon.png" alt="icon" width="50px">
                 </div>
                 <div class="text">
                     <h1>Makeup Look</h1>
@@ -198,11 +199,38 @@
                 </div>
              </div>
         </div>
+
+        <div class="soonjung">
+            <div class="soonjung-1">
+                <div class="icon">
+                    <img src="images/soonjung_icon.png" alt="icon" width="50px">
+                </div>
+                <div class="text">
+                    <h1>SOON JUNG</h1>
+                    <h2>30년 History, 저자극 검증 System</h2>
+                </div>
+                <div class="viewmore">
+                    <a href="#">
+                    <div class=button>View More</div>
+                    </a>
+                </div>
+            </div>
+            <div class="soonjung-2">
+                <img src="images/soonjung.jpg" alt="soonjungpoto" width="1270px">
+
+                <div class="soonjung-item">
+                    <img src="images/soonjung_item_1.jpg" alt="item1" width="200px">
+                    <img src="images/soonjung_item_2.jpg" alt="item2" width="200px">
+                    <img src="images/soonjung_item_3.jpg" alt="item3" width="200px">
+                    <img src="images/soonjung_item_4.jpg" alt="item4" width="200px">
+                    <img src="images/soonjung_item_5.jpg" alt="item5" width="200px">
+                    <img src="images/soonjung_item_6.jpg" alt="item6" width="200px">
+                </div>
+            </div>
+
+        </div>
     </div>
 </body>
-
-
-</html>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -214,3 +242,6 @@
         bestDiv.style.height = topDiv.style.height;
 });
 </script>
+
+</html>
+

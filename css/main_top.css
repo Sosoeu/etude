@@ -24,8 +24,9 @@ body {
 .logo {
     position: absolute;
     top: 50px;
-    left: 70px;
+    left: 70px; 
     z-index: 2;
+    cursor: pointer;
 }
 
 .plus{
